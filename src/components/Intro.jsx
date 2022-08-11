@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
+import Conference from "../img/conferenceRoom.jpg"
+import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -16,7 +17,6 @@ const Left = styled.div`
 
 `;
 const Right = styled.div`
-
   width: 40%;
 `;
 
@@ -31,6 +31,42 @@ const Description = styled.p`
   margin-top: 20px;
 `;
 
+const Info = styled.div`
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+`
+const Button = styled.button `
+    padding: 15px;
+    background: darkblue;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+`
+
+const Contact = styled.div`
+    display: flex;
+    flex-direction: column;
+
+`
+const Contacttext = styled.span`
+    color: purple;
+    margin-top: 5px;
+
+`
+const Phone = styled.span`
+    color: purple;
+    font-weight: bold;
+`
+const Image = styled.img`
+    width: 100%;
+
+`
 const Intro = () => {
   return (
     <Container>
@@ -43,8 +79,16 @@ const Intro = () => {
           satisfaction. We are a family owned and operated business that does
           not depend on a large mass of clients for survival
         </Description>
+        <Info>
+            <Button>Learn More</Button>
+            <Contact>
+                <Phone>Call us (248)767-0976</Phone>
+                <Contacttext>For any questions or concerns</Contacttext>
+            </Contact>
+        </Info>
       </Left>
-      <Right>R</Right>
+      <Right><Image src={Conference}></Image></Right>
+      <AnimatedShapes/>
     </Container>
   );
 };
