@@ -2,55 +2,68 @@ import React from "react";
 import styled from "styled-components";
 import Bubble from "../img/Bubble.png";
 
-
-const Square = styled.div`
+const Clean = styled.img.attrs({src: `${Bubble}`})`
   width: 60px;
   height: 60px;
-  background-color: blue;
   opacity: 0.7;
   position: absolute;
   top: -60px;
   left: -60px;
   z-index: -1;
 
-  animation: square 25s linear alternate infinite;
-  @keyframes square {
+  animation: clean 15s linear alternate infinite;
+  @keyframes clean {
     to {
       transform: translate(100vw, 100vh);
     }
   }
 `;
 
-const Circle = styled.div`
+const Clean2 = styled.img.attrs({src: `${Bubble}`})`
+  width: 60px;
+  height: 60px;
+  opacity: 0.7;
+  position: absolute;
+  top: -200px;
+  left: 100px;
+  z-index: -1;
+
+  animation: clean2 15s linear alternate infinite;
+  @keyframes clean2 {
+    to {
+      transform: translate(100vw, 100vh);
+    }
+  }
+`;
+
+const Clean3 = styled.img.attrs({src: `${Bubble}`})`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: pink;
   position: absolute;
   top: 200px;
   left: -100px;
   z-index: -1;
 
-  animation: circle 25s linear alternate infinite;
-  @keyframes circle {
+  animation: clean3 15s linear alternate infinite;
+  @keyframes clean3 {
     to {
       transform: translate(100vw, -100vh);
     }
   }
 `;
 
-const Rectangle = styled.div`
-  width: 50px;
+const Clean4 = styled.img.attrs({src: `${Bubble}`})`
+  width: 100px;
   height: 100px;
-  background-color: yellow;
   opacity: 0.5;
   position: absolute;
   top: 460px;
   left: -50px;
   z-index: -1;
 
-  animation: rectangle 25s linear alternate infinite;
-  @keyframes rectangle {
+  animation: clean4 15s linear alternate infinite;
+  @keyframes clean4 {
     to {
       transform: translate(100vw, -50vh);
     }
@@ -60,9 +73,10 @@ const Rectangle = styled.div`
 const AnimatedShapes = () => {
   return (
     <>
-      <Square />
-      <Circle />
-      <Rectangle />
+      <Clean />
+      <Clean2 />
+      <Clean3 />
+      <Clean4 />
     </>
   );
 };
