@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Phone from "../img/Phone.png"
+import BroadOcean from "../img/BroadOcean.jpg"
 
 
 const Container = styled.div`
@@ -23,7 +23,7 @@ const Image = styled.img`
 const Feature = () => {
   return (
     <Container>
-        <Left><Image src={Phone}/></Left>
+        <Left><Image src={BroadOcean}/></Left>
         <Right></Right>
         </Container>
   )

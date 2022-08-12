@@ -8,16 +8,16 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const IntroShape = styled.div`
-  clip-path: polygon(100% 0%, 61% 0%, 33% 100%, 100% 100%);
-  background-color: crimson;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-`;
+// const IntroShape = styled.div`
+//   clip-path: polygon(100% 0%, 61% 0%, 33% 100%, 100% 100%);
+//   background-color: crimson;
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   z-index: -1;
+// `;
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
       <Container>
         <Navbar />
         <Intro />
-        <IntroShape />
+        {/* <IntroShape /> */}
       </Container>
       <Container>
         <Feature />
