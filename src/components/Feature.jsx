@@ -4,6 +4,7 @@ import BroadOcean from "../img/BroadOcean.jpg";
 
 const Container = styled.div`
   display: flex;
+  padding: 20px;
 `;
 const Left = styled.div`
   width: 50%;

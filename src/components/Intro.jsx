@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Conference from "../img/conferenceRoom.jpg";
 import AnimatedShapes from "./AnimatedShapes";
+import '../style.css'
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -59,6 +60,7 @@ const Contacttext = styled.span`
 const Phone = styled.span`
   color: purple;
   font-weight: bold;
+  text-decoration: none;
 `;
 const Image = styled.img`
   clip-path: polygon(100% 0%, 61% 0%, 50% 100%, 100% 100%);
@@ -69,6 +71,7 @@ const Image = styled.img`
   left: 0;
   z-index: 1;
 `;
+
 const Intro = () => {
   return (
     <Container>
@@ -84,7 +87,7 @@ const Intro = () => {
         <Info>
           <Button>Learn More</Button>
           <Contact>
-            <Phone>Call us (248)767-0976</Phone>
+            <Phone><a href="tel:(248)767-0976">Call us at (248)767-0976</a></Phone>
             <Contacttext>For any questions or concerns</Contacttext>
           </Contact>
         </Info>
