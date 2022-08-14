@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BroadOcean from "../img/BroadOcean.jpg";
+import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
   display: flex;
@@ -113,6 +114,7 @@ const Feature = () => {
         </Decs>
         <Button>Learn More</Button>
       </Right>
+      <AnimatedShapes/>
     </Container>
   );
 };
