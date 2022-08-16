@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import BroadOcean from "../img/BroadOcean.jpg";
+import CleaningSupplies from "../img/CleaningSupplies.png";
 import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
   display: flex;
   padding: 20px;
+  height: 100%;
 `;
 const Left = styled.div`
   width: 50%;
@@ -19,14 +20,14 @@ const Right = styled.div`
 `;
 
 const Image = styled.img`
-  width: 80%;
   clip-path: polygon(0 0, 50% 0, 33% 100%, 0 100%);
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 150%;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
+
 `;
 
 const Title = styled.span`
@@ -70,7 +71,7 @@ const Feature = () => {
   return (
     <Container>
       <Left>
-        <Image src={BroadOcean} />
+        <Image src={CleaningSupplies} />
       </Left>
       <Right>
         <Title>

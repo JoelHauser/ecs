@@ -80,7 +80,7 @@ const Service = () => {
           <CardContainer>
             <MiniCard />
           </CardContainer>
-          <Button>How it works</Button>
+          <Button>Get a quote</Button>
         </Wrapper>
       </Right>
       <AnimatedShapes />
