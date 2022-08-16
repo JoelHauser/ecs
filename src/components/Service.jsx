@@ -6,6 +6,7 @@ import MiniCard from "./MiniCard";
 
 const Container = styled.div`
   display: flex;
+  height: 100%;
 `;
 const Right = styled.div`
   width: 50%;
@@ -42,6 +43,17 @@ display: flex;
 justify-content: space-between;
 margin-top: 50px;
 `
+const Button = styled.button`
+  width: 180px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 50px;
+  cursor: pointer;
+`
 
 const Service = () => {
   return (
@@ -67,10 +79,8 @@ const Service = () => {
           </Desc>
           <CardContainer>
             <MiniCard />
-            <MiniCard />
-            <MiniCard />
-            <MiniCard />
           </CardContainer>
+          <Button>How it works</Button>
         </Wrapper>
       </Right>
       <AnimatedShapes />
