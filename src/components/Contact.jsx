@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Map from '../img/Map.png'
-import Phone from '../img/Phone.png'
+// import Phone from '../img/Phone.png'
 import Send from '../img/Send.png'
 
 const Container = styled.div`
