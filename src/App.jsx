@@ -3,7 +3,9 @@ import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Feature from "./components/Feature";
 import Office from "./img/Office.jpg";
-import Mop from "./components/Service"
+import Mop from "./components/Service";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const Container = styled.div`
   height: 100vh;
@@ -29,9 +31,11 @@ const FeatureShape = styled.div`
   clip-path: polygon(0 0, 55% 0, 33% 100%, 0 100%);
 `;
 
-const ServiceShape = styled.img.attrs({ src: `${Office}`})`
+const ServiceShape = styled.img.attrs({ src: `${Office}` })`
   ${Shape}
   clip-path: polygon(0 0, 33% 0, 33% 100%, 0 100%);
+  height: 100%;
+  width: 100%;
 `;
 
 const App = () => {
@@ -49,6 +53,10 @@ const App = () => {
       <Container>
         <Mop />
         <ServiceShape />
+      </Container>
+      <Container>
+        <Contact />
+        <Footer />
       </Container>
     </>
   );

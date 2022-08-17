@@ -23,7 +23,7 @@ const Image = styled.img`
   clip-path: polygon(0 0, 50% 0, 33% 100%, 0 100%);
   position: absolute;
   width: 100%;
-  height: 150%;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 1;

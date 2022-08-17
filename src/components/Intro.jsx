@@ -7,7 +7,7 @@ import '../style.css'
 const Container = styled.div`
   height: calc(100vh - 50px);
   display: flex;
-  padding: 20px;
+
 `;
 const Left = styled.div`
   width: 60%;
@@ -93,7 +93,7 @@ const Intro = () => {
         </Info>
       </Left>
       <Right>
-        <Image src={Conference}></Image>
+        <Image src={Conference} />
       </Right>
       <AnimatedShapes />
     </Container>

@@ -6,7 +6,7 @@ import card3 from "../img/card3.png";
 import card4 from "../img/card4.png";
 
 const Container = styled.div`
-  width: 100px;
+  width: 180px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -23,9 +23,10 @@ const Image = styled.img`
 `;
 
 const Text = styled.span`
-  margin-top: 10px;
-  text-align: center;
-`;
+  margin-top: 20px;
+  text-align: left;
+  padding: 5px;
+  `;
 
 const MiniCard = () => {
   return (
@@ -33,33 +34,46 @@ const MiniCard = () => {
       <Container>
         <Image src={card1} />
         <Text>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
-          exercitationem est rerum soluta illo dicta asperiores eaque vero
-          quaerat similique.
+          <b>Office Cleaning:</b>
+          <li>Around the clock operational support</li>
+          <li>Flexible cleaning plans to fit your needs</li>
+          <li>Restocking</li>
+          <li>
+            Incredible staff that will dedicate themselves to your facility
+          </li>
         </Text>
       </Container>
       <Container>
         <Image src={card2} />
         <Text>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
-          exercitationem est rerum soluta illo dicta asperiores eaque vero
-          quaerat similique.
+          <b>Floor and Carpet care:</b>
+          <li>New flooring</li>
+          <li>New Carpet</li>
+          <li>Stripping and Waxing</li>
+          <li>Scrub and Recoat Services</li>
+          <li>Commercial Floor Cleaning</li>
+          <li>Floor Maintenance Programs</li>
+          <li></li>
         </Text>
       </Container>
       <Container>
         <Image src={card3} />
         <Text>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
-          exercitationem est rerum soluta illo dicta asperiores eaque vero
-          quaerat similique.
+          <b>Emergency Cleaning:</b>
+          <li>Water Damage</li>
+          <li>Fire restoration</li>
+          <li>Spots, stains and odor removal</li>
+          <li>Expert carpet cleaning</li>
+          <li>Hard surface floor cleaning</li>
         </Text>
       </Container>
       <Container>
         <Image src={card4} />
         <Text>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
-          exercitationem est rerum soluta illo dicta asperiores eaque vero
-          quaerat similique.
+          <b>Window Cleaning:</b>
+          <li>Commercial</li>
+          <li>High Rise</li>
+          <li>Storefront</li>
         </Text>
       </Container>
     </>
