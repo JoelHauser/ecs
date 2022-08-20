@@ -7,6 +7,11 @@ const Container = styled.div`
   display: flex;
   padding: 20px;
   height: 100%;
+
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 30px, 20px;
+  }
 `;
 const Left = styled.div`
   width: 50%;
@@ -17,6 +22,11 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+    width: 100%;
+  }
 `;
 
 const Image = styled.img`
@@ -27,11 +37,13 @@ const Image = styled.img`
   top: 0;
   left: 0;
   z-index: 1;
-
 `;
 
 const Title = styled.span`
   font-size: 70px;
+  @media only screen and (max-width: 480px) {
+    font-size: 50px;
+  }
 `;
 const SubTitle = styled.span`
   font-size: 24px;
@@ -115,7 +127,7 @@ const Feature = () => {
         </Decs>
         <Button>Learn More</Button>
       </Right>
-      <AnimatedShapes/>
+      <AnimatedShapes />
     </Container>
   );
 };

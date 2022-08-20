@@ -5,7 +5,6 @@ import Feature from "./components/Feature";
 import Office from "./img/Office.jpg";
 import Mop from "./components/Service";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 
 const Container = styled.div`
   height: 100vh;
@@ -39,7 +38,10 @@ const ServiceShape = styled.img.attrs({ src: `${Office}` })`
 `;
 
 const App = () => {
+  const smallScreen = window.screen.width <= 480 ? true : false
+
   return (
+    
     <>
       <Container>
         <Navbar />
@@ -52,11 +54,10 @@ const App = () => {
       </Container>
       <Container>
         <Mop />
-        <ServiceShape />
+        {smallScreen && <ServiceShape />}
       </Container>
       <Container>
         <Contact />
-        <Footer />
       </Container>
     </>
   );

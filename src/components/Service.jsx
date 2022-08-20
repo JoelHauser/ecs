@@ -7,13 +7,22 @@ import MiniCard from "./MiniCard";
 const Container = styled.div`
   display: flex;
   height: 100%;
+  @media only screen and (max-width: 480px) {
+flex-direction:column;  }
 `;
 const Right = styled.div`
   width: 50%;
+
+  @media only screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const Left = styled.div`
   width: 50%;
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const Image = styled.img`
@@ -27,6 +36,11 @@ const Wrapper = styled.div`
   padding: 50px;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 480px) {
+    padding: 20px;
+
+  }
 `;
 
 const Title = styled.h1`

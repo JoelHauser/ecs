@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import Conference from "../img/conferenceRoom.jpg";
 import AnimatedShapes from "./AnimatedShapes";
-import '../style.css'
+import "../style.css";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
   display: flex;
 
+  @media only screen and (max-width: 480px) {
+    display: none;
+    flex-direction: column;
+  }
 `;
 const Left = styled.div`
   width: 60%;
@@ -15,14 +19,28 @@ const Left = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 480px) {
+    width: 100px;
+    height: 100%;
+  }
 `;
 const Right = styled.div`
   width: 40%;
+
+  @media only screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const Title = styled.h1`
   width: 60%;
   font-size: 60px;
+
+  @media only screen and (max-width:480px){
+      width: 100px;
+      font-size: 50px;
+    }
 `;
 
 const Description = styled.p`
@@ -37,6 +55,10 @@ const Info = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
+
+  @media only screen and (max-width:480px){
+      width: 100px;
+      flex-direction: column;}
 `;
 const Button = styled.button`
   padding: 15px;
@@ -47,7 +69,10 @@ const Button = styled.button`
   border: none;
   letter-spacing: 2px;
   cursor: pointer;
-`;
+
+  @media only screen and (max-width:480px){
+    margin-bottom: 20px;
+}`;
 
 const Contact = styled.div`
   display: flex;
@@ -87,7 +112,9 @@ const Intro = () => {
         <Info>
           <Button>Learn More</Button>
           <Contact>
-            <Phone><a href="tel:(248)767-0976">Call us at (248)767-0976</a></Phone>
+            <Phone>
+              <a href="tel:(248)767-0976">Call us at (248)767-0976</a>
+            </Phone>
             <Contacttext>For any questions or concerns</Contacttext>
           </Contact>
         </Info>
